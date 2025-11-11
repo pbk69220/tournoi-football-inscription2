@@ -1,0 +1,304 @@
+.presentation {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.presentation-content {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  line-height: 1.8;
+  color: #333;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.intro-section {
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.intro-section h2 {
+  font-size: 26px;
+  color: #667eea;
+  margin-bottom: 20px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.intro-text {
+  font-size: 17px;
+  color: #555;
+  line-height: 1.9;
+  margin: 0;
+}
+
+.intro-text strong {
+  color: #764ba2;
+  font-weight: 700;
+}
+
+.tournament-details {
+  background: linear-gradient(135deg, #f9f7ff 0%, #f5f2ff 100%);
+  padding: 25px;
+  border-radius: 10px;
+  margin-top: 20px;
+  border-left: 4px solid #667eea;
+}
+
+.tournament-details p {
+  margin: 0;
+  font-size: 16px;
+  color: #555;
+  line-height: 1.8;
+}
+
+.tournament-details p strong {
+  color: #764ba2;
+  font-weight: 700;
+}
+
+.highlight-section {
+  background: linear-gradient(135deg, #f9f7ff 0%, #f0e6ff 100%);
+  padding: 40px;
+  border-radius: 12px;
+  border-left: 5px solid #667eea;
+}
+
+.highlight-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.highlight-header h3 {
+  font-size: 26px;
+  color: #667eea;
+  margin: 0 0 12px 0;
+  font-weight: 700;
+}
+
+.highlight-header p {
+  font-size: 16px;
+  color: #764ba2;
+  margin: 0;
+  font-style: italic;
+}
+
+.help-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin-bottom: 30px;
+}
+
+.help-card {
+  background: white;
+  padding: 30px 25px;
+  border-radius: 10px;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 12px rgba(102, 126, 234, 0.12);
+  border-top: 4px solid #667eea;
+}
+
+.help-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(102, 126, 234, 0.2);
+}
+
+.help-card.accommodation {
+  border-top-color: #ff6b6b;
+}
+
+.help-card.volunteer {
+  border-top-color: #00bcd4;
+}
+
+.help-card.together {
+  border-top-color: #ffa500;
+}
+
+.card-icon {
+  font-size: 60px;
+  margin-bottom: 15px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  animation: floatIcon 3s ease-in-out infinite;
+  height: 60px;
+}
+
+@keyframes floatIcon {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.help-card h4 {
+  font-size: 19px;
+  color: #333;
+  margin: 0 0 12px 0;
+  font-weight: 700;
+}
+
+.help-card.accommodation h4 {
+  color: #ff6b6b;
+}
+
+.help-card.volunteer h4 {
+  color: #00bcd4;
+}
+
+.help-card p {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.help-card p strong {
+  color: #667eea;
+  font-weight: 700;
+}
+
+.conclusion {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 4px 16px rgba(102, 126, 234, 0.2);
+}
+
+.conclusion p {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.cta-section {
+  background: linear-gradient(135deg, #f9f7ff 0%, #f5f2ff 100%);
+  padding: 40px;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+
+.cta-section h3 {
+  font-size: 24px;
+  color: #667eea;
+  text-align: center;
+  margin: 0 0 15px 0;
+  font-weight: 700;
+}
+
+.cta-section > p {
+  font-size: 16px;
+  text-align: center;
+  color: #555;
+  margin: 0 0 30px 0;
+  font-weight: 500;
+}
+
+.cta-btn {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 16px 40px;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 16px rgba(102, 126, 234, 0.3);
+  display: block;
+  margin: 0 auto;
+}
+
+.cta-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(102, 126, 234, 0.4);
+}
+
+.cta-btn:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 600px) {
+  .presentation-content {
+    padding: 20px;
+  }
+
+  .intro-section h2 {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+
+  .intro-text {
+    font-size: 14px;
+  }
+
+  .tournament-details {
+    padding: 18px;
+    margin-top: 15px;
+  }
+
+  .tournament-details p {
+    font-size: 14px;
+  }
+
+  .highlight-section {
+    padding: 20px;
+  }
+
+  .highlight-header h3 {
+    font-size: 21px;
+  }
+
+  .help-cards {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .help-card {
+    padding: 20px 15px;
+  }
+
+  .card-icon {
+    font-size: 45px;
+    margin-bottom: 10px;
+  }
+
+  .help-card h4 {
+    font-size: 16px;
+  }
+
+  .help-card p {
+    font-size: 13px;
+  }
+
+  .conclusion {
+    padding: 20px;
+  }
+
+  .conclusion p {
+    font-size: 16px;
+  }
+
+  .cta-section {
+    padding: 20px;
+  }
+
+  .cta-section h3 {
+    font-size: 20px;
+  }
+
+  .cta-btn {
+    padding: 14px 30px;
+    font-size: 15px;
+  }
+}
