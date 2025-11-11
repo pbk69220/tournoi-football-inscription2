@@ -140,7 +140,7 @@ export default function RegistrationForm({ onSubmit }: RegistrationFormProps) {
         <h2><FormIcon size={24} />Info sur le joueur du club</h2>
 
         <div className="form-group">
-          <label htmlFor="playerFirstName"><NoteIcon size={16} />Si je suis un(e) proche d'un joueur du BFB, préciser *</label>
+          <label htmlFor="playerFirstName"><NoteIcon size={16} />Si je suis un(e) proche ou parent d'un joueur du BFB, préciser son prénom *</label>
           <input
             type="text"
             id="playerFirstName"
